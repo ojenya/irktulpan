@@ -555,7 +555,8 @@ form textarea {
         margin-top: 5px;
     }
     .title {
-        display: none;
+        /* display: none; */
+        margin-top: 20px;
     }
     .cards__list {
         height: 100%;
