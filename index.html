@@ -39,7 +39,7 @@
             <span class="phone">+7 800 555-35-35</span>
             <span class="sub_contacts_info">Прием заказов с 7.00 до 00.00 по МСК</span>
         </div>
-        <div class="basket"><img class="basket_icon" src="shopping-basket-svgrepo-com.svg" alt="basket icon" />Корзина</div>
+        <div class="offer">Заказать</div>
 
     </header>
     <nav>
@@ -87,7 +87,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/1.jpg" alt="1">
                 <div class="card__options">
-                    <div class="card__title">БУКЕТ "Морской мотив"</div>
+                    <div class="card__title">Розовые</div>
                     <div class="card__control">
                         <div class="card__price">750₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -97,7 +97,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/2.jpg" alt="2">
                 <div class="card__options">
-                    <div class="card__title">Букет "Альстромерии 35 шт"</div>
+                    <div class="card__title">Фиолетовые</div>
                     <div class="card__control">
                         <div class="card__price">1990₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -107,7 +107,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/3.jpg" alt="3">
                 <div class="card__options">
-                    <div class="card__title">Букет из перца и чеснока</div>
+                    <div class="card__title">Нежно-розовые</div>
                     <div class="card__control">
                         <div class="card__price">1950₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -117,7 +117,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/4.jpg" alt="4">
                 <div class="card__options">
-                    <div class="card__title">Букет из 35 микс тюльпанов</div>
+                    <div class="card__title">Алые</div>
                     <div class="card__control">
                         <div class="card__price">2490₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -134,7 +134,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/1.jpg" alt="1">
                 <div class="card__options">
-                    <div class="card__title">БУКЕТ "Морской мотив"</div>
+                    <div class="card__title">Белые</div>
                     <div class="card__control">
                         <div class="card__price">750₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -144,7 +144,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/2.jpg" alt="2">
                 <div class="card__options">
-                    <div class="card__title">Букет "Альстромерии 35 шт"</div>
+                    <div class="card__title">Индиго</div>
                     <div class="card__control">
                         <div class="card__price">1990₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -154,7 +154,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/3.jpg" alt="3">
                 <div class="card__options">
-                    <div class="card__title">Букет из перца и чеснока</div>
+                    <div class="card__title">Голубые</div>
                     <div class="card__control">
                         <div class="card__price">1950₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -164,7 +164,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/4.jpg" alt="4">
                 <div class="card__options">
-                    <div class="card__title">Букет из 35 микс тюльпанов</div>
+                    <div class="card__title">Красные</div>
                     <div class="card__control">
                         <div class="card__price">2490₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -180,7 +180,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/1.jpg" alt="1">
                 <div class="card__options">
-                    <div class="card__title">БУКЕТ "Морской мотив"</div>
+                    <div class="card__title">Черные</div>
                     <div class="card__control">
                         <div class="card__price">750₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -190,7 +190,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/2.jpg" alt="2">
                 <div class="card__options">
-                    <div class="card__title">Букет "Альстромерии 35 шт"</div>
+                    <div class="card__title">Желтые</div>
                     <div class="card__control">
                         <div class="card__price">1990₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -200,7 +200,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/3.jpg" alt="3">
                 <div class="card__options">
-                    <div class="card__title">Букет из перца и чеснока</div>
+                    <div class="card__title">Белые</div>
                     <div class="card__control">
                         <div class="card__price">1950₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -210,7 +210,7 @@
             <div class="cards__card">
                 <img class="card__img" src="flowers/4.jpg" alt="4">
                 <div class="card__options">
-                    <div class="card__title">Букет из 35 микс тюльпанов</div>
+                    <div class="card__title">Серый космос</div>
                     <div class="card__control">
                         <div class="card__price">2490₽</div>
                         <div class="card__buy-btn">КУПИТЬ</div>
@@ -263,6 +263,13 @@
                 });
                 return false;
             });
+
+            $('.offer').on('click', () => {
+                console.log(123)
+                $('html, body').animate({
+                    scrollTop: $('footer').offset().top
+                }, 2500)
+            })
         });
     </script>
 </body>
