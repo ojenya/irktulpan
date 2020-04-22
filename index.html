@@ -54,7 +54,7 @@
     <div class="promo">
         <div class="promo__info">
             <h3 class="promo__title">Для самых близких<br> и любимых!</h3>
-            <span class="promo__text">Доставка по Иркутску 24/7<br>Фото перед отправкой<br>SMS-отчет о даставке</span>
+            <span class="promo__text">Доставка по Иркутску 24/7<br>Фото перед отправкой<br>SMS-отчет о доставке</span>
         </div>
         <div class="promo__img"></div>
     </div>
@@ -77,15 +77,38 @@
             <div class="pictures__text">Бесплатная доставка по Иркутску при заказе от 2000 рублей</div>
         </div>
     </div>
+
+    <div class="mobile_pic">
+        <ul class="mobile">
+            <li class="mobile__item">
+                <img src="img/delivery-truck.svg" alt="delivery">
+                <div>Круглосуточная доставка по городу, от 90 минут</div>
+            </li>
+            <li class="mobile__item">
+                <img src="img/invitation.svg" alt="delivery">
+                <div>Бесплатная открытка к каждому букету</div>
+            </li>
+            <li class="mobile__item">
+                <img src="img/camera.svg" alt="delivery">
+                <div>Фото перед доставкой на ваш email и по sms</div>
+            </li>
+            <li class="mobile__item">
+                <img src="img/sale.svg" alt="delivery">
+                <div>Бесплатная доставка по Иркутску при заказе от 2000 рублей</div>
+            </li>
+        </ul>
+    </div>
+
     <div class="sale">
         <div class="cards__title"><img src="img/sale-card.svg" alt="sale">
             <p class="cards__title-title">АКЦИИ</p>
         </div>
     </div>
-    <div class="cards">
+    <div class="cards mobile-cards">
         <div class="cards__list">
             <div class="cards__card">
                 <img class="card__img" src="flowers/1.jpg" alt="1">
+                <div class="card__img-mobile" style="background-image:url('flowers/1.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Розовые</div>
                     <div class="card__control">
@@ -96,6 +119,7 @@
             </div>
             <div class="cards__card">
                 <img class="card__img" src="flowers/2.jpg" alt="2">
+                <div class="card__img-mobile" style="background-image:url('flowers/2.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Фиолетовые</div>
                     <div class="card__control">
@@ -106,6 +130,7 @@
             </div>
             <div class="cards__card">
                 <img class="card__img" src="flowers/3.jpg" alt="3">
+                <div class="card__img-mobile" style="background-image:url('flowers/3.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Нежно-розовые</div>
                     <div class="card__control">
@@ -116,6 +141,7 @@
             </div>
             <div class="cards__card">
                 <img class="card__img" src="flowers/4.jpg" alt="4">
+                <div class="card__img-mobile" style="background-image:url('flowers/4.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Алые</div>
                     <div class="card__control">
@@ -221,14 +247,13 @@
     </div>
     <footer class="footer">
         <div class="promo-title">
-            <h3>Обратная связь</h3>
+            Остались вопросы?<br> Хотите сделать заказ?<br>
+            <div>Оставьте свой номер телефона и мы вам перезвоним!</div>
         </div>
         <form action="./feedback.php" id="form1" method="POST">
-            <div class="form-row">
-                <div class="col">
-                    <input type="hidden" name="formData" value="Заголовок формы">
-                    <input type="text" name="name" class="name form-control" placeholder="Представьтесь, пожалуйста">
-                </div>
+            <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Ваше имя:</label>
+                <input type="text" name="name" id="name" class="name form-control" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="form-group">
                 <label for="recipient-mail" class="col-form-label">Ваш email:</label>
@@ -242,7 +267,7 @@
                 <label for="message-text" class="col-form-label">Сообщение:</label>
                 <textarea name="message" id="message-text" class="message form-control" placeholder=""></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Заказать</button>
+            <button type="submit" class="takeflower">Заказать</button>
         </form>
 
 

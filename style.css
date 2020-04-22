@@ -4,6 +4,9 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.mobile_pic {
+    display: none;
+}
 
 
 header {
@@ -206,7 +209,7 @@ nav {
 
 .cards__card:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 100px 50px rgba(245, 182, 8, 0.7)
+    /* box-shadow: 0px 0px 100px 50px rgba(245, 182, 8, 0.7) */
 }
 
 .cards__card:first-child {
@@ -250,6 +253,7 @@ nav {
     font-weight: 600;
     font-size: 14px;
     padding: 5px 10px;
+    border-radius: 4px;
     border: 2px solid #f5b608;
 }
 
@@ -257,10 +261,6 @@ nav {
     color: white;
     background-color: #f5b608;
     border: 2px solid #f5b608;
-}
-
-footer {
-    /* background-color: #282828; */
 }
 
 .footer {
@@ -283,6 +283,60 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
+}
+
+form input {
+    border: none !important;
+    border-bottom: 1px solid #f5b608 !important;
+    border-radius: 0 !important;
+}
+
+form textarea {
+    border: 1px solid #f5b608 !important;
+}
+
+
+.takeflower {
+    width: 100%;
+    border: 2px solid #f5b608;
+    background-color: white;
+    border-radius: 4px;
+    color: #282828;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.takeflower:focus {
+    outline: none;
+}
+.takeflower:hover {
+    background-color: #f5b608;
+    color: white;
+}
+
+@media screen and (min-width: 769px) {
+    .card__options {
+        width: 100%;
+    }
+    .promo-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .promo-title div {
+        margin-top: 15px;
+    }
+    form {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .footer {
+        width: 50%;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }
 }
 
 
@@ -360,17 +414,157 @@ footer {
     .footer {
         width: 50%;
         margin: 0 auto;
+        padding-bottom: 10px;
     }
-    .form {
+    form {
         width: 100%;
+        margin-top: 15px;
     }
 
-    .form-row {
-        width: 100%;
-    }
+    
 
     label {
         font-weight: 600;
     }
 
+    .promo-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .promo-title div {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .logo_title {
+        font-size: 14px;
+        width: 100%;
+        font-weight: 500;
+    }
+    .offer {
+        display: none;
+    }
+    .contacts {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 500;   
+    }
+
+    .promo {
+        flex-direction: column;
+        align-items: center;
+    }
+    .promo__info {
+        width: 100%;
+        height: 240px;
+    }
+    .promo__img {
+        width: 100%;
+        height: 271px;
+        background-size: contain;
+    }
+    .pictures {
+        display: none;
+    }
+    .mobile_pic {
+        display: block;
+    }
+    .mobile {
+        padding: 30px 0;
+        display: flex;
+        width: 100%;
+        outline: none;
+        flex-direction: column;
+        background-color: #f5b608;
+    }
+    .mobile__item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .mobile__item img {
+        width: 15%;
+    }
+    .mobile__item div {
+        width: 55%;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+    }
+    .sale {
+        padding: 0;
+    }
+    .cards__list {
+        margin: 0 !important;
+        flex-direction: column;
+        width: 100%
+    }
+    .cards__card {
+        width: 100%;
+        
+    }
+    .card__img {
+        display: none;
+    }
+    .card__img-mobile {
+        width: 100%;
+        height: 250px;
+        border-radius: 4px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .card__title {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .card__price {
+        font-size: 16px;
+    }
+    .card__buy-btn {
+        padding: 10px 5px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .cards {
+        display: none;
+    }
+    .mobile-cards {
+        display: flex;
+        margin-top: 5px;
+    }
+    .title {
+        display: none;
+    }
+    .cards__list {
+        height: 100%;
+    }
+    .cards__card {
+        margin: 17px 0 0 0;
+    }
+    footer {
+        width: 95% !important;
+        padding-top: 55px;
+        padding-bottom: 10px;
+    }
+    .promo-title {
+        width: 89%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .promo-title div {
+        margin-top: 10px;
+    }
+
+    form {
+        margin-top: 25px;
+        width: 100%;
+    }
 }
