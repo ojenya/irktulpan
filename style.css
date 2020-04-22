@@ -300,6 +300,10 @@ nav {
     justify-content: center;
 }
 
+form {
+    margin-bottom: 100px;
+}
+
 form input {
     border: none !important;
     border-bottom: 1px solid #f5b608 !important;
@@ -355,6 +359,9 @@ form textarea {
 }
 
 @media screen and (max-width: 768px) {
+    form {
+        margin-bottom: none;
+    }
     .cards__card:hover {
         cursor: pointer;
         box-shadow: none
@@ -448,9 +455,18 @@ form textarea {
     .promo-title div {
         margin-top: 15px;
     }
+    .card__img {
+        width: 150px;
+    }
+    h3 {
+        margin: 50px auto 50px auto;
+    }
 }
 
 @media screen and (max-width: 375px) {
+    form {
+        margin-bottom: none;
+    }
     #menu {
         display: none;
     }
