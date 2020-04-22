@@ -250,7 +250,7 @@
             Остались вопросы?<br> Хотите сделать заказ?<br>
             <div>Оставьте свой номер телефона и мы вам перезвоним!</div>
         </div>
-        <form action="./feedback.php" id="form1" method="POST">
+        <form action="https://formspree.io/mzbanegr" method="POST">
             <div class="form-group">
                 <label for="recipient-name" class="col-form-label">Ваше имя:</label>
                 <input type="text" name="name" id="name" class="name form-control" placeholder="Представьтесь, пожалуйста">
@@ -269,25 +269,33 @@
             </div>
             <button type="submit" class="takeflower">Заказать</button>
         </form>
+        <!-- <input type="hidden" name="_next" value="https://mysite.com/thanks.html" /> -->
+        <!-- <form action="https://formspree.io/mzbanegr" method="POST">
+            <input type="text" name="name">
+            <input type="email" name="_replyto">
+            <input type="submit" value="Send">
+        </form> -->
 
+        <!-- 
 
+        <form action="https://formspree.io/mzbanegr" method="POST">
+            <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+            <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+            <!-- your other form fields go here -->
+
+        <!-- <button type="submit">Send</button>
+        </form> -->-->
     </footer>
     <script>
         $(document).ready(function() {
-            $('form').submit(function() {
-                var formID = $(this).attr('id'); // Получение ID формы
-                var formNm = $('#' + formID);
-                $.ajax({
-                    type: 'POST',
-                    url: 'feedback.php', // Обработчик формы отправки
-                    data: formNm.serialize(),
-                    success: function(data) {
-                        // Вывод текста результата отправки в текущей форме
-                        $(formNm).html(data);
-                    }
-                });
-                return false;
-            });
+
 
             $('.offer').on('click', () => {
                 console.log(123)
