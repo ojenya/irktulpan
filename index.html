@@ -44,10 +44,10 @@
     </header>
     <nav>
         <ul class="menu">
-            <li class="menu__item">Розы</li>
-            <li class="menu__item">Цветы</li>
-            <li class="menu__item">Букеты</li>
-            <li class="menu__item">Подарки</li>
+            <li class="menu__item"><a href="#roses">Sale</a></li>
+            <li class="menu__item"><a href="#roses">Розы</a></li>
+            <li class="menu__item"><a href="#buket">Букеты</a></li>
+            <li class="menu__item"><a href="#card">Открытки</a></li>
         </ul>
     </nav>
 
@@ -99,7 +99,7 @@
         </ul>
     </div>
 
-    <div class="sale">
+    <div class="sale" id="sale">
         <div class="cards__title"><img src="img/sale-card.svg" alt="sale">
             <p class="cards__title-title">АКЦИИ</p>
         </div>
@@ -107,7 +107,7 @@
     <div class="cards mobile-cards">
         <div class="cards__list">
             <div class="cards__card">
-                <img class="card__img" src="flowers/1.jpg" alt="1">
+                <img class="card__img" style="background-image:url('flowers/1.jpg');" alt="1">
                 <div class="card__img-mobile" style="background-image:url('flowers/1.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Розовые</div>
@@ -118,7 +118,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/2.jpg" alt="2">
+                <img class="card__img" style="background-image:url('flowers/2.jpg');" alt="2">
                 <div class="card__img-mobile" style="background-image:url('flowers/2.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Фиолетовые</div>
@@ -129,7 +129,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/3.jpg" alt="3">
+                <img class="card__img" style="background-image:url('flowers/3.jpg');" alt="3">
                 <div class="card__img-mobile" style="background-image:url('flowers/3.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Нежно-розовые</div>
@@ -140,7 +140,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/4.jpg" alt="4">
+                <img class="card__img" style="background-image:url('flowers/4.jpg');" alt="4">
                 <div class="card__img-mobile" style="background-image:url('flowers/4.jpg');"></div>
                 <div class="card__options">
                     <div class="card__title">Алые</div>
@@ -154,11 +154,11 @@
     </div>
 
 
-    <h3 class="title">Розы</h3>
+    <h3 class="title" id="roses">Розы</h3>
     <div class="cards">
         <div class="cards__list">
             <div class="cards__card">
-                <img class="card__img" src="flowers/rose_1.jpg" alt="1">
+                <img class="card__img" style="background-image:url('flowers/rose_1.jpg');">
                 <div class="card__options">
                     <div class="card__title">Белые</div>
                     <div class="card__control">
@@ -168,7 +168,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/rose_2.jpg" alt="2">
+                <img class="card__img" style="background-image:url('flowers/rose_2.jpg');">
                 <div class="card__options">
                     <div class="card__title">Индиго</div>
                     <div class="card__control">
@@ -178,7 +178,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/rose_3.jpg" alt="3">
+                <img class="card__img" style="background-image:url('flowers/rose_3.jpg');">
                 <div class="card__options">
                     <div class="card__title">Голубые</div>
                     <div class="card__control">
@@ -188,7 +188,7 @@
                 </div>
             </div>
             <div class="cards__card">
-                <img class="card__img" src="flowers/rose_4.jpg" alt="4">
+                <img class="card__img" style="background-image:url('flowers/rose_4.jpg');">
                 <div class="card__options">
                     <div class="card__title">Красные</div>
                     <div class="card__control">
@@ -200,7 +200,8 @@
         </div>
     </div>
 
-    <h3 class="title">Букеты</h3>
+
+    <h3 class="title" id="buket">Букеты</h3>
     <div class="cards">
         <div class="cards__list">
             <div class="cards__card">
@@ -235,6 +236,52 @@
             </div>
             <div class="cards__card">
                 <img class="card__img" src="flowers/buket_4.jpg" alt="4">
+                <div class="card__options">
+                    <div class="card__title">Серый космос</div>
+                    <div class="card__control">
+                        <div class="card__price">2490₽</div>
+                        <div class="card__buy-btn">КУПИТЬ</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h3 class="title" id="card">Открытки</h3>
+    <div class="cards">
+        <div class="cards__list">
+            <div class="cards__card">
+
+                <img class="card__img" style="background-image:url('flowers/card_1.jpg');">
+                <div class="card__options">
+                    <div class="card__title">Черные</div>
+                    <div class="card__control">
+                        <div class="card__price">750₽</div>
+                        <div class="card__buy-btn">КУПИТЬ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card">
+                <img class="card__img" tyle="background-image:url('flowers/card_2.jpg');">
+                <div class="card__options">
+                    <div class="card__title">Желтые</div>
+                    <div class="card__control">
+                        <div class="card__price">1990₽</div>
+                        <div class="card__buy-btn">КУПИТЬ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card">
+                <img class="card__img" tyle="background-image:url('flowers/card_3.jpg');">
+                <div class="card__options">
+                    <div class="card__title">Белые</div>
+                    <div class="card__control">
+                        <div class="card__price">1950₽</div>
+                        <div class="card__buy-btn">КУПИТЬ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__card">
+                <img class="card__img" tyle="background-image:url('flowers/card_4.jpg');">
                 <div class="card__options">
                     <div class="card__title">Серый космос</div>
                     <div class="card__control">
