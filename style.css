@@ -4,6 +4,15 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.card__price-old {
+    /* color: red; */
+    text-decoration: line-through;
+}
+
+.price__sale {
+    color: rgb(228, 92, 1);
+}
+
 a {
     text-decoration: none;
     color: #f5b608;
